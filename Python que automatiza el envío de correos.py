@@ -18,6 +18,7 @@ body = 'Este es un correo de prueba'
 message.attach(MIMEText(body, 'plain'))
 
 # Configurar el servidor SMTP para Outlook
+#smtp_server = smtplib.SMIP('smtp.gmail.com', 587)
 smtp_server = smtplib.SMTP('smtp.office365.com', 587)
 smtp_server.starttls()  # Inicia la conexión segura
 
